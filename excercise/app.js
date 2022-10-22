@@ -183,6 +183,8 @@ const thomsCloset = [
 // console.log(thomsCloset[2]); //'wool mittens', 'wool scarf', 'raybans', 'left shoe'
 //Modify code to get the expected output
 
+
+//Dress us up
 // let outfit1 = kristynsCloset[Math.floor(Math.random()*kristynsCloset.length)] + ' with ' + thomsCloset[0][Math.floor(Math.random()*thomsCloset[0].length)]
 // let outfit2 = kristynsCloset[Math.floor(Math.random()*kristynsCloset.length)] + ' with ' + thomsCloset[1][Math.floor(Math.random()*thomsCloset[1].length)]
 // let outfit3 = kristynsCloset[Math.floor(Math.random()*kristynsCloset.length)] + ' with ' + thomsCloset[2][Math.floor(Math.random()*thomsCloset[2].length)]
@@ -191,10 +193,26 @@ const thomsCloset = [
 // )
 
 //the diffrent way
-let thomLenght = Math.floor(Math.random()*thomsCloset.length);
-let outfit1 = kristynsCloset[Math.floor(Math.random()*kristynsCloset.length)] + ' with ' + thomsCloset[thomLenght][Math.floor(Math.random()*thomsCloset[thomLenght].length)]
-console.log(
-    `We should wear ${outfit1}`
-)
+// let thomLenght = Math.floor(Math.random()*thomsCloset.length);
+// let outfit = kristynsCloset[Math.floor(Math.random()*kristynsCloset.length)] + ' with ' + thomsCloset[thomLenght][Math.floor(Math.random()*thomsCloset[thomLenght].length)]
+// console.log(
+//     `We should wear ${outfit}`
+// )
 
+//
 
+//Dirty Laundry
+for (i =0; i < kristynsCloset.length; i++ ){
+    console.log(
+        "WHIRR: Now washing " + kristynsCloset[i]
+    )
+}
+
+//Inventory
+let thomItems = [];
+for (let i = 0; i< thomsCloset.length ;i++){
+     for (let y=0; y <thomsCloset[i].length; y++){
+         thomItems.push(thomsCloset[i][y])
+     }
+}
+console.log(thomItems)
