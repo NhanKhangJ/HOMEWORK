@@ -55,8 +55,10 @@ wolfy.shift();
 // Yell at the Ninja Turtles
 ////////////////////////////////
 
-
-
+const ninjaTurtle = ['Donatello', 'Leonardo', 'Raphael', 'Michaelangelo'];
+for (const iterator of ninjaTurtle) {
+    console.log(iterator.toLocaleUpperCase());
+}
 
 
 ////////////////////////////////
